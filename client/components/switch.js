@@ -20,7 +20,7 @@ class Switch extends Component {
       isRedOn: !prevState.isRedOn
     }));
 
-    axios.get(`http://192.168.0.42:8080/leds/0${ledIndex}`).then(({ data })=> {
+    axios.get(`http://192.168.0.42:8080/leds/${ledIndex}`).then(({ data })=> {
       	console.log(data);
       })
       .catch((err)=> {})
