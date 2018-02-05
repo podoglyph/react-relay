@@ -4,7 +4,7 @@ class Title extends Component {
   render() {
     return (
      <div style={{textAlign: 'center'}}>
-        <h1>Globe Fish Is</h1>
+        <h1>Tessel Onboard LEDs</h1>
       </div>);
   }
 }

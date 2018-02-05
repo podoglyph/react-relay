@@ -1,0 +1,18 @@
+.row-toggle, .row-onoff {
+  margin: 20px 0px;
+}
+
+.led-indicator {
+  text-align: center;
+}
+
+.led-button {
+  border: 3px solid #000;
+  height: 150px;
+  width: 150px;
+}
+
+.led-reset, .led-allon {
+  height: 75px;
+  width: 75px;
+}
