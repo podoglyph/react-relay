@@ -5,7 +5,7 @@ class Switch extends Component {
   constructor(props) {
     super(props);
     this.state = { isRedOn: false };
-    this.state = { isOrangeOn: false };
+    this.state = { isAmberOn: false };
     this.state = { isGreenOn: false };
     this.state = { isBlueOn: false };
     this.handleClick = this.handleClick.bind(this);
@@ -59,9 +59,9 @@ class Switch extends Component {
           </button>
         </li>
         <li>
-          <button onClick={this.handleClick} className="led-button" data-led="1" data-color="Orange">
-            Orange:
-            {this.state.isOrangeOn ? 'ON' : 'OFF'}
+          <button onClick={this.handleClick} className="led-button" data-led="1" data-color="Amber">
+            Amber:
+            {this.state.isAmberOn ? 'ON' : 'OFF'}
           </button>
         </li>
         <li>
