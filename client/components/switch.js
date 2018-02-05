@@ -4,10 +4,10 @@ import axios from 'axios';
 class Switch extends Component {
   constructor(props) {
     super(props);
-    this.state = { isRedOn: true };
-    this.state = { isOrangeOn: true };
-    this.state = { isGreenOn: true };
-    this.state = { isBlueOn: true };
+    this.state = { isRedOn: false };
+    this.state = { isOrangeOn: false };
+    this.state = { isGreenOn: false };
+    this.state = { isBlueOn: false };
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -15,13 +15,36 @@ class Switch extends Component {
     let button = event.target;
     let ledIndex = button.getAttribute('data-led');
     let stateSelector = button.getAttribute('data-color');
+    let key = `is${stateSelector}On`;
 
-    this.setState(prevState => ({
-      isRedOn: !prevState.isRedOn
-    }));
+    axios.get(`http://192.168.0.42:8080/leds/${ledIndex}`)
+      .then(({ data })=> {
+      	console.log(data.on);
+        this.setState({
+          [key]: data.on
+        });
+      })
+      .catch((err)=> {})
+  }
 
-    axios.get(`http://192.168.0.42:8080/leds/${ledIndex}`).then(({ data })=> {
-      	console.log(data);
+  downLeds(event) {
+    let button = event.target;
+    let ledIndex = button.getAttribute('data-led');
+
+    axios.get(`http://192.168.0.42:8080/leds/${ledIndex}`)
+      .then(({ data }) => {
+        console.log(data);
+      })
+      .catch((err)=> {})
+  }
+
+  upLeds(event) {
+    let button = event.target;
+    let ledIndex = button.getAttribute('data-led');
+
+    axios.get(`http://192.168.0.42:8080/leds/${ledIndex}`)
+      .then(({ data }) => {
+        console.log(data);
       })
       .catch((err)=> {})
   }
@@ -37,22 +60,33 @@ class Switch extends Component {
         </li>
         <li>
           <button onClick={this.handleClick} className="led-button" data-led="1" data-color="Orange">
-            Orange
+            Orange:
             {this.state.isOrangeOn ? 'ON' : 'OFF'}
-            </button>
+          </button>
         </li>
         <li>
           <button onClick={this.handleClick} className="led-button" data-led="2" data-color="Green">
-            Green
+            Green:
             {this.state.isGreenOn ? 'ON' : 'OFF'}
-            </button>
+          </button>
         </li>
         <li>
           <button onClick={this.handleClick} className="led-button" data-led="3" data-color="Blue">
-            Blue
+            Blue:
             {this.state.isBlueOn ? 'ON' : 'OFF'}
-            </button>
+          </button>
         </li>
+        <li>
+          <button onClick={this.downLeds} className="led-button" data-led="6">
+            Reset
+          </button>
+        </li>
+        <li>
+          <button onClick={this.upLeds} className="led-button" data-led="5">
+            All On
+          </button>
+        </li>
+
       </ul>
     )
   }
