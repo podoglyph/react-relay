@@ -37,7 +37,7 @@ class Switch extends Component {
 
     axios.get(`http://192.168.0.42:8888/leds/${ledIndex}`)
       .then(({ data }) => {
-        console.log(data.on);
+        console.log(data);
         this.setState({
           isRedOn: false,
           isAmberOn: false,
