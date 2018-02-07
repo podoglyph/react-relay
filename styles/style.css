@@ -1,3 +1,16 @@
+body {
+  /* background: linear-gradient(to bottom, #000000 0%, #003f00 40%, #005800 80%, #007200 100%); */
+  background: linear-gradient(to bottom, #000000 0%, #003f00 60%, #005800 100%);
+  background-attachment: fixed;
+}
+
+.header {
+  text-align: center;
+  margin-top: 25px;
+  padding: 5px;
+  color: #fff;
+}
+
 .row-toggle, .row-onoff {
   margin: 20px 0px;
 }
@@ -7,9 +20,28 @@
 }
 
 .led-button {
-  border: 3px solid #000;
-  height: 150px;
-  width: 150px;
+  background-color: #e5e5e5;
+  border-radius: 50%;
+  border: 5px solid;
+  height: 100px;
+  width: 100px;
+  transition: all .3s ease-in-out;
+}
+
+.led-button#red{
+  border-color: #FF0000;
+}
+
+.led-button#amber{
+  border-color: #FFC200;
+}
+
+.led-button#green{
+  border-color: #00cd00;
+}
+
+.led-button#blue{
+  border-color: #0000ff;
 }
 
 .led-reset, .led-allon {

@@ -71,25 +71,25 @@ class Switch extends Component {
         <div className="row row-toggle">
           <div className="col-md-12">
             <div className="led-indicator col-md-3">
-              <button onClick={this.handleClick} className="led-button" data-led="0" data-color="Red">
+              <button onClick={this.handleClick} className="led-button" id="red" data-led="0" data-color="Red">
                 {this.state.isRedOn ? 'ON' : 'OFF'}
               </button>
             </div>
 
             <div className="led-indicator col-md-3">
-              <button onClick={this.handleClick} className="led-button" data-led="1" data-color="Amber">
+              <button onClick={this.handleClick} className="led-button" id="amber" data-led="1" data-color="Amber">
                 {this.state.isAmberOn ? 'ON' : 'OFF'}
               </button>
             </div>
 
             <div className="led-indicator col-md-3">
-              <button onClick={this.handleClick} className="led-button" data-led="2" data-color="Green">
+              <button onClick={this.handleClick} className="led-button" id="green" data-led="2" data-color="Green">
                 {this.state.isGreenOn ? 'ON' : 'OFF'}
               </button>
             </div>
 
             <div className="led-indicator col-md-3">
-              <button onClick={this.handleClick} className="led-button" data-led="3" data-color="Blue">
+              <button onClick={this.handleClick} className="led-button" id="blue" data-led="3" data-color="Blue">
                 {this.state.isBlueOn ? 'ON' : 'OFF'}
               </button>
             </div>
