@@ -4,4 +4,4 @@ A ReactJS client to call out to a Tessel 2. This app allows the user to toggle t
 
 The repo for the Tessel 2 server is [here](https://github.com/podoglyph/tessel-toggle-onboard-leds "Tessel 2 Server").
 
-![Demo](https://i.gyazo.com/70db7a697a0bf92d8de965d273b05d72.gif)
+![Demo](https://github.com/podoglyph/tessel-toggle-client/blob/master/demo.gif)
