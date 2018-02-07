@@ -18971,7 +18971,6 @@ module.exports = camelize;
 
 
 function Title() {
-
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     "div",
     { className: "row header" },
