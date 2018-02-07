@@ -1,7 +1,7 @@
 {
-  "name": "web-relay",
+  "name": "tessel-toggle-client",
   "version": "1.0.0",
-  "description": "A React.js web app that turns on a lamp",
+  "description": "A React.js web app that turn on lights",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
