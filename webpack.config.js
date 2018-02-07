@@ -15,8 +15,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/, options: {presets: ['es2016', 'react']}}
+      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/, query: {presets: ['es2016', 'react']} },
+      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
     ]
   },
 
