@@ -1620,38 +1620,67 @@ module.exports = Cancel;
 
 /***/ }),
 /* 22 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_title__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_switch__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_video__ = __webpack_require__(55);
 
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _react = __webpack_require__(2);
 
+var _react2 = _interopRequireDefault(_react);
 
+var _reactDom = __webpack_require__(26);
 
-class App extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
+var _reactDom2 = _interopRequireDefault(_reactDom);
 
-  render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'div',
-      null,
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_title__["a" /* default */], null),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_switch__["a" /* default */], null),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_video__["a" /* default */], null)
-    );
+var _title = __webpack_require__(35);
+
+var _title2 = _interopRequireDefault(_title);
+
+var _switch = __webpack_require__(36);
+
+var _switch2 = _interopRequireDefault(_switch);
+
+var _video = __webpack_require__(55);
+
+var _video2 = _interopRequireDefault(_video);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_Component) {
+  _inherits(App, _Component);
+
+  function App() {
+    _classCallCheck(this, App);
+
+    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
   }
 
-}
+  _createClass(App, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_title2.default, null),
+        _react2.default.createElement(_switch2.default, null),
+        _react2.default.createElement(_video2.default, null)
+      );
+    }
+  }]);
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(App, null), document.getElementById('root'));
+  return App;
+}(_react.Component);
+
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
 
 /***/ }),
 /* 23 */
@@ -18963,19 +18992,27 @@ module.exports = camelize;
 
 /***/ }),
 /* 35 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Title() {
 
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+  return _react2.default.createElement(
     "div",
     { className: "row header" },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       "h1",
       null,
       "Tessel Onboard LEDs"
@@ -18983,157 +19020,200 @@ function Title() {
   );
 }
 
-/* harmony default export */ __webpack_exports__["a"] = (Title);
+exports.default = Title;
 
 /***/ }),
 /* 36 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-class Switch extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
-  constructor(props) {
-    super(props);
-    this.state = {
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(16);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Switch = function (_Component) {
+  _inherits(Switch, _Component);
+
+  function Switch(props) {
+    _classCallCheck(this, Switch);
+
+    var _this = _possibleConstructorReturn(this, (Switch.__proto__ || Object.getPrototypeOf(Switch)).call(this, props));
+
+    _this.state = {
       isRedOn: false,
       isAmberOn: false,
       isGreenOn: false,
       isBlueOn: false
     };
-    this.handleClick = this.handleClick.bind(this);
-    this.downLeds = this.downLeds.bind(this);
-    this.upLeds = this.upLeds.bind(this);
+    _this.handleClick = _this.handleClick.bind(_this);
+    _this.downLeds = _this.downLeds.bind(_this);
+    _this.upLeds = _this.upLeds.bind(_this);
+    return _this;
   }
 
-  handleClick(event) {
-    let button = event.target;
-    let ledIndex = button.getAttribute('data-led');
-    let stateSelector = button.getAttribute('data-color');
-    let key = `is${stateSelector}On`;
+  _createClass(Switch, [{
+    key: 'handleClick',
+    value: function handleClick(event) {
+      var _this2 = this;
 
-    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(`http://192.168.0.42:8888/leds/${ledIndex}`).then(({ data }) => {
-      console.log(data.on);
-      this.setState({
-        [key]: data.on
-      });
-    }).catch(err => {});
-  }
+      var button = event.target;
+      var ledIndex = button.getAttribute('data-led');
+      var stateSelector = button.getAttribute('data-color');
+      var key = 'is' + stateSelector + 'On';
 
-  downLeds(event) {
-    let button = event.target;
-    let ledIndex = button.getAttribute('data-led');
+      _axios2.default.get('http://192.168.0.42:8888/leds/' + ledIndex).then(function (_ref) {
+        var data = _ref.data;
 
-    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(`http://192.168.0.42:8888/leds/${ledIndex}`).then(({ data }) => {
-      console.log(data);
-      this.setState({
-        isRedOn: false,
-        isAmberOn: false,
-        isGreenOn: false,
-        isBlueOn: false
-      });
-    }).catch(err => {});
-  }
+        console.log(data.on);
+        _this2.setState(_defineProperty({}, key, data.on));
+      }).catch(function (err) {});
+    }
+  }, {
+    key: 'downLeds',
+    value: function downLeds(event) {
+      var _this3 = this;
 
-  upLeds(event) {
-    let button = event.target;
-    let ledIndex = button.getAttribute('data-led');
+      var button = event.target;
+      var ledIndex = button.getAttribute('data-led');
 
-    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(`http://192.168.0.42:8888/leds/${ledIndex}`).then(({ data }) => {
-      console.log(data);
-      this.setState({
-        isRedOn: true,
-        isAmberOn: true,
-        isGreenOn: true,
-        isBlueOn: true
-      });
-    }).catch(err => {});
-  }
+      _axios2.default.get('http://192.168.0.42:8888/leds/' + ledIndex).then(function (_ref2) {
+        var data = _ref2.data;
 
-  render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'div',
-      { className: 'container' },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        console.log(data);
+        _this3.setState({
+          isRedOn: false,
+          isAmberOn: false,
+          isGreenOn: false,
+          isBlueOn: false
+        });
+      }).catch(function (err) {});
+    }
+  }, {
+    key: 'upLeds',
+    value: function upLeds(event) {
+      var _this4 = this;
+
+      var button = event.target;
+      var ledIndex = button.getAttribute('data-led');
+
+      _axios2.default.get('http://192.168.0.42:8888/leds/' + ledIndex).then(function (_ref3) {
+        var data = _ref3.data;
+
+        console.log(data);
+        _this4.setState({
+          isRedOn: true,
+          isAmberOn: true,
+          isGreenOn: true,
+          isBlueOn: true
+        });
+      }).catch(function (err) {});
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
         'div',
-        { className: 'row row-toggle' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        { className: 'container' },
+        _react2.default.createElement(
           'div',
-          { className: 'col-lg-6 col-lg-offset-3' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          { className: 'row row-toggle' },
+          _react2.default.createElement(
             'div',
-            { className: 'led-indicator col-md-3' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'button',
-              { onClick: this.handleClick, className: 'led-button', id: 'red', 'data-led': '0', 'data-color': 'Red' },
-              this.state.isRedOn ? 'ON' : 'OFF'
+            { className: 'col-lg-6 col-lg-offset-3' },
+            _react2.default.createElement(
+              'div',
+              { className: 'led-indicator col-md-3' },
+              _react2.default.createElement(
+                'button',
+                { onClick: this.handleClick, className: 'led-button', id: 'red', 'data-led': '0', 'data-color': 'Red' },
+                this.state.isRedOn ? 'ON' : 'OFF'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'led-indicator col-md-3' },
+              _react2.default.createElement(
+                'button',
+                { onClick: this.handleClick, className: 'led-button', id: 'amber', 'data-led': '1', 'data-color': 'Amber' },
+                this.state.isAmberOn ? 'ON' : 'OFF'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'led-indicator col-md-3' },
+              _react2.default.createElement(
+                'button',
+                { onClick: this.handleClick, className: 'led-button', id: 'green', 'data-led': '2', 'data-color': 'Green' },
+                this.state.isGreenOn ? 'ON' : 'OFF'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'led-indicator col-md-3' },
+              _react2.default.createElement(
+                'button',
+                { onClick: this.handleClick, className: 'led-button', id: 'blue', 'data-led': '3', 'data-color': 'Blue' },
+                this.state.isBlueOn ? 'ON' : 'OFF'
+              )
             )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row row-onoff' },
+          _react2.default.createElement(
             'div',
-            { className: 'led-indicator col-md-3' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'button',
-              { onClick: this.handleClick, className: 'led-button', id: 'amber', 'data-led': '1', 'data-color': 'Amber' },
-              this.state.isAmberOn ? 'ON' : 'OFF'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'led-indicator col-md-3' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'button',
-              { onClick: this.handleClick, className: 'led-button', id: 'green', 'data-led': '2', 'data-color': 'Green' },
-              this.state.isGreenOn ? 'ON' : 'OFF'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'led-indicator col-md-3' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'button',
-              { onClick: this.handleClick, className: 'led-button', id: 'blue', 'data-led': '3', 'data-color': 'Blue' },
-              this.state.isBlueOn ? 'ON' : 'OFF'
+            { className: 'col-md-12' },
+            _react2.default.createElement(
+              'div',
+              { className: 'led-indicator col-md-6' },
+              _react2.default.createElement(
+                'button',
+                { onClick: this.downLeds, className: 'led-button led-reset', 'data-led': '6' },
+                'Reset'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'led-indicator col-md-6' },
+              _react2.default.createElement(
+                'button',
+                { onClick: this.upLeds, className: 'led-button led-allon', 'data-led': '5' },
+                'All On'
+              )
             )
           )
         )
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        { className: 'row row-onoff' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { className: 'col-md-12' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'led-indicator col-md-6' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'button',
-              { onClick: this.downLeds, className: 'led-button led-reset', 'data-led': '6' },
-              'Reset'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'led-indicator col-md-6' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'button',
-              { onClick: this.upLeds, className: 'led-button led-allon', 'data-led': '5' },
-              'All On'
-            )
-          )
-        )
-      )
-    );
-  }
-}
+      );
+    }
+  }]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Switch);
+  return Switch;
+}(_react.Component);
+
+exports.default = Switch;
 
 /***/ }),
 /* 37 */
@@ -20021,35 +20101,44 @@ module.exports = function spread(callback) {
 
 /***/ }),
 /* 55 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(16);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Video() {
-  let vidData = '';
+  var vidData = '';
 
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+  return _react2.default.createElement(
     'div',
     { className: 'container camera-feed' },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       'div',
       { className: 'row' },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement(
         'div',
         { className: 'col-sm-6 col-sm-offset-3' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'http://192.168.0.42:8888/camera' })
+        _react2.default.createElement('img', { src: 'http://192.168.0.42:8888/camera' })
       )
     )
   );
 }
 
-/* harmony default export */ __webpack_exports__["a"] = (Video);
+exports.default = Video;
 
 /***/ })
 /******/ ]);
