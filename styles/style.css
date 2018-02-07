@@ -1,5 +1,4 @@
 body {
-  /* background: linear-gradient(to bottom, #000000 0%, #003f00 40%, #005800 80%, #007200 100%); */
   background: linear-gradient(to bottom, #000000 0%, #003f00 60%, #005800 100%);
   background-attachment: fixed;
 }
@@ -17,12 +16,13 @@ body {
 
 .led-indicator {
   text-align: center;
+  padding: 5px 0px;
 }
 
 .led-button {
   background-color: #e5e5e5;
   border-radius: 50%;
-  border: 5px solid;
+  border: 5px solid #000;
   height: 100px;
   width: 100px;
   transition: all .3s ease-in-out;
@@ -51,4 +51,7 @@ body {
 
 .camera-feed {
   text-align: center;
+}
+.camera-feed img {
+  max-width: 100%;
 }

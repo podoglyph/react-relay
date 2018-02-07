@@ -69,7 +69,7 @@ class Switch extends Component {
     return (
       <div className="container">
         <div className="row row-toggle">
-          <div className="col-md-12">
+          <div className="col-lg-6 col-lg-offset-3">
             <div className="led-indicator col-md-3">
               <button onClick={this.handleClick} className="led-button" id="red" data-led="0" data-color="Red">
                 {this.state.isRedOn ? 'ON' : 'OFF'}
